@@ -1,0 +1,49 @@
+{
+    "name": "zanshield/sdk",
+    "description": "Client library for integrating a system with ZanShield, eGAZ's multi-factor authentication service: builds signed, encrypted tickets and verifies ZanShield's acknowledgements.",
+    "type": "library",
+    "keywords": [
+        "zanshield",
+        "mfa",
+        "2fa",
+        "authentication",
+        "egaz",
+        "zanzibar"
+    ],
+    "homepage": "https://github.com/devtechzanzibar/zanshield-php",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "DevTech",
+            "email": "abdulrahman@devtech.co.tz",
+            "homepage": "https://devtech.co.tz"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/devtechzanzibar/zanshield-php/issues",
+        "source": "https://github.com/devtechzanzibar/zanshield-php"
+    },
+    "require": {
+        "php": ">=8.1",
+        "phpseclib/phpseclib": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZanShield\\Sdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZanShield\\Sdk\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
